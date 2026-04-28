@@ -13,8 +13,8 @@ export default function Home() {
         maxWidth: "1100px",
         margin: "0 auto"
       }}>
-        <img src="/icon_1024.png" alt="Optiflow" style={{ height: "32px" }} />
-      </div>
+        <img src="/icon_1024.png" alt="Optiflow" style={{ height: "28px", objectFit: "contain" }} 
+/>
 
       {/* HERO */}
       <section style={{
