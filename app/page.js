@@ -2,101 +2,110 @@ export default function Home() {
   return (
     <main style={{
       fontFamily: "-apple-system, BlinkMacSystemFont, sans-serif",
-      padding: "24px",
-      maxWidth: "480px",
-      margin: "0 auto",
-      lineHeight: 1.5
+      background: "#0B1B34",
+      color: "#fff",
+      minHeight: "100vh"
     }}>
 
+      {/* NAV */}
+      <div style={{
+        padding: "20px",
+        maxWidth: "1100px",
+        margin: "0 auto"
+      }}>
+        <img src="/logo.png" alt="Optiflow" style={{ height: "32px" }} />
+      </div>
+
       {/* HERO */}
-      <section style={{ marginTop: "40px" }}>
-        <h1 style={{
-          fontSize: "28px",
-          fontWeight: "600",
-          letterSpacing: "-0.5px"
-        }}>
-          Zorg dat elke kandidaat wordt opgevolgd
-          zonder dat je er zelf achteraan hoeft
-        </h1>
+      <section style={{
+        padding: "40px 20px",
+        maxWidth: "1100px",
+        margin: "0 auto",
+        display: "flex",
+        flexDirection: "column",
+        gap: "40px"
+      }}>
 
-        <p style={{
-          marginTop: "16px",
-          color: "#666",
-          fontSize: "16px"
-        }}>
-          Automatiseer je follow-up na eerste contact en voorkom dat gesprekken stilvallen.
-        </p>
+        <div style={{ maxWidth: "500px" }}>
+          <h1 style={{
+            fontSize: "32px",
+            lineHeight: 1.2,
+            fontWeight: "600"
+          }}>
+            Zorg dat elke kandidaat wordt opgevolgd
+            zonder dat je er zelf achteraan hoeft
+          </h1>
 
-        <button style={{
-          marginTop: "24px",
-          width: "100%",
-          padding: "14px",
-          background: "#000",
-          color: "#fff",
-          border: "none",
-          borderRadius: "10px",
-          fontSize: "16px"
+          <p style={{
+            marginTop: "16px",
+            color: "#AAB4C3"
+          }}>
+            Automatiseer je follow-up na eerste contact en voorkom dat gesprekken stilvallen.
+          </p>
+
+          <button style={{
+            marginTop: "24px",
+            padding: "14px 18px",
+            background: "#fff",
+            color: "#000",
+            border: "none",
+            borderRadius: "10px",
+            fontWeight: "500"
+          }}>
+            Plan een korte demo
+          </button>
+        </div>
+
+        <div style={{
+          background: "#fff",
+          borderRadius: "16px",
+          padding: "20px"
         }}>
-          Bekijk hoe het werkt
-        </button>
+          <img src="/icon_1024.png" alt="Optiflow" style={{
+            width: "100%",
+            borderRadius: "12px"
+          }} />
+        </div>
+
       </section>
 
       {/* HOW IT WORKS */}
-      <section style={{ marginTop: "60px" }}>
-        <h2 style={{ fontSize: "18px", fontWeight: "600" }}>
-          Hoe het werkt
-        </h2>
+      <section style={{
+        background: "#fff",
+        color: "#000",
+        padding: "60px 20px"
+      }}>
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>
+          <h2 style={{ fontSize: "22px", fontWeight: "600" }}>
+            Hoe het werkt
+          </h2>
 
-        <div style={{ marginTop: "20px", display: "flex", flexDirection: "column", gap: "16px" }}>
-          
-          <div style={{ display: "flex", gap: "12px" }}>
-            <div style={{ fontWeight: "600" }}>1.</div>
-            <div>Jij benadert iemand via LinkedIn of mail</div>
+          <div style={{ marginTop: "30px", display: "flex", flexDirection: "column", gap: "20px" }}>
+            <div>1. Jij benadert iemand</div>
+            <div>2. Optiflow neemt de follow-up over</div>
+            <div>3. Meer reacties zonder extra werk</div>
           </div>
-
-          <div style={{ display: "flex", gap: "12px" }}>
-            <div style={{ fontWeight: "600" }}>2.</div>
-            <div>Optiflow neemt de follow-up automatisch over</div>
-          </div>
-
-          <div style={{ display: "flex", gap: "12px" }}>
-            <div style={{ fontWeight: "600" }}>3.</div>
-            <div>Meer reacties zonder extra werk</div>
-          </div>
-
         </div>
       </section>
 
-      {/* BENEFITS */}
-      <section style={{ marginTop: "60px" }}>
-        <h2 style={{ fontSize: "18px", fontWeight: "600" }}>
-          Waarom dit werkt
-        </h2>
-
-        <ul style={{ marginTop: "16px", paddingLeft: "16px", color: "#444" }}>
-          <li>Geen kandidaten meer vergeten</li>
-          <li>Consistente en nette follow-up</li>
-          <li>Bespaart tijd zonder onpersoonlijk te worden</li>
-        </ul>
-      </section>
-
       {/* CTA */}
-      <section style={{ marginTop: "80px", marginBottom: "40px" }}>
-        <h2 style={{ fontSize: "18px", fontWeight: "600" }}>
+      <section style={{
+        padding: "60px 20px",
+        textAlign: "center"
+      }}>
+        <h2 style={{ fontSize: "20px" }}>
           Benieuwd hoe dit werkt in jouw proces?
         </h2>
 
         <button style={{
           marginTop: "20px",
-          width: "100%",
-          padding: "14px",
-          background: "#000",
-          color: "#fff",
-          border: "none",
+          padding: "14px 20px",
+          background: "#fff",
+          color: "#000",
           borderRadius: "10px",
-          fontSize: "16px"
+          border: "none"
         }}>
-          Plan een korte demo
+          Plan een demo
         </button>
       </section>
 
