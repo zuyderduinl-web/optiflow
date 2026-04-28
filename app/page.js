@@ -13,7 +13,7 @@ export default function Home() {
         maxWidth: "1100px",
         margin: "0 auto"
       }}>
-        <img src="/logo.png" alt="Optiflow" style={{ height: "32px" }} />
+        <img src="/icon_1024.png" alt="Optiflow" style={{ height: "32px" }} />
       </div>
 
       {/* HERO */}
